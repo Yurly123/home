@@ -58,5 +58,5 @@
       }
     }
   },
-  "tags": ["nest"]
+  "tags": ["nest", "backend"]
 }
