@@ -1,0 +1,13 @@
+{
+  "hosting": [
+    {
+      "target": "home",
+      "public": "dist/apps/home/web",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ]
+    }
+  ]
+}

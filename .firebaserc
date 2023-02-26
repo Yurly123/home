@@ -1,0 +1,13 @@
+{
+  "projects": {},
+  "targets": {
+    "my-site-114514": {
+      "hosting": {
+        "home": [
+          "yurly123"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}
