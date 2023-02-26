@@ -18,9 +18,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@home/*": [
-        "<rootDir>/apps/home/*"
-      ],
+      "@home/web/ui": [
+        "libs/home/web/ui/src/index.ts"
+      ]
     }
   },
   "exclude": [
