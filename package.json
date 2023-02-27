@@ -3,7 +3,9 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "lint:all": "nx run-many --target=lint --all=true"
+    "lint:all": "nx run-many --target=lint --all=true",
+    "deploy": "gh-pages -d dist/apps/web",
+    "predeploy": "nx build web"
   },
   "private": true,
   "dependencies": {
@@ -57,6 +59,7 @@
     "eslint": "~8.15.0",
     "eslint-config-prettier": "8.1.0",
     "eslint-plugin-cypress": "^2.10.3",
+    "gh-pages": "^5.0.0",
     "jest": "28.1.1",
     "jest-environment-jsdom": "28.1.1",
     "jest-preset-angular": "~12.2.3",

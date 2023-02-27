@@ -4,12 +4,12 @@ import { Observable } from 'rxjs';
 import { map, shareReplay } from 'rxjs';
 
 @Component({
-  selector: 'my-site-home-navigation',
+  selector: 'home-navigation',
   templateUrl: './navigation.component.html',
   styleUrls: ['./navigation.component.scss'],
 })
 export class NavigationComponent {
-  constructor(private breakpointObserver: BreakpointObserver) {}
+  constructor(private breakpointObserver: BreakpointObserver) { }
 
   isHandset$: Observable<boolean> = this.breakpointObserver
     .observe([Breakpoints.HandsetLandscape, '(orientation: portrait)'])

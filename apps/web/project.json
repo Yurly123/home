@@ -3,13 +3,14 @@
   "$schema": "../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
   "sourceRoot": "apps/web/src",
-  "prefix": "my-site",
+  "prefix": "home",
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
       "outputs": ["{options.outputPath}"],
       "options": {
         "outputPath": "dist/apps/web",
+        "baseHref": "/home/",
         "index": "apps/web/src/index.html",
         "main": "apps/web/src/main.ts",
         "polyfills": ["zone.js"],
