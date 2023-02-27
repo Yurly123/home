@@ -4,7 +4,7 @@
     class="sidenav"
     fixedInViewport
     [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
-    [mode]="(isHandset$ | async) ? 'over' : 'side'"
+    [mode]="(isHandset$ | async) ? 'push' : 'side'"
     [opened]="(isHandset$ | async) === false"
   >
     <mat-toolbar>바로가기</mat-toolbar>
@@ -29,5 +29,6 @@
       <span>Home</span>
     </mat-toolbar>
     <!-- Add Content Here -->
+    <ng-content></ng-content>
   </mat-sidenav-content>
 </mat-sidenav-container>

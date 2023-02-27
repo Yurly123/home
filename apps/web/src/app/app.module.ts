@@ -4,6 +4,7 @@ import { RouterModule } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { NavigationModule } from '@web/ui';
+import { PagesModule } from '@web/pages';
 import { appRoutes } from './app.routes';
 import { AppComponent } from './app.component';
 
@@ -11,9 +12,10 @@ import { AppComponent } from './app.component';
   declarations: [AppComponent],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(appRoutes, { initialNavigation: 'enabledBlocking' }),
     BrowserAnimationsModule,
+    RouterModule.forRoot(appRoutes, { initialNavigation: 'enabledBlocking' }),
     NavigationModule,
+    PagesModule
   ],
   providers: [],
   bootstrap: [AppComponent],
