@@ -18,8 +18,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@home/web/ui": [
-        "libs/home/web/ui/src/index.ts"
+      "@web/ui": [
+        "libs/web/ui/src/index.ts"
       ]
     }
   },
