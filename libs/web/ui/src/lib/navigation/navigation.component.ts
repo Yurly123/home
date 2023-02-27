@@ -15,7 +15,6 @@ export class NavigationComponent {
   constructor(
     private readonly breakpointObserver: BreakpointObserver,
     private readonly router: Router,
-    private readonly location: Location,
   ) { }
 
   toolbarItems: ToolbarItem[] = [
@@ -39,5 +38,9 @@ export class NavigationComponent {
   changePath(path: string) {
     const url = this.router.parseUrl(path)
     this.router.navigateByUrl(url)
+  }
+
+  get currentUrl() {
+    return this.router.url
   }
 }

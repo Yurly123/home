@@ -30,6 +30,7 @@
       <a
         *ngFor="let item of toolbarItems"
         mat-flat-button
+        [disabled]="currentUrl === item.path"
         color="primary"
         (click)="changePath(item.path)"
       >

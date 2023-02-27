@@ -1,0 +1,18 @@
+<h1>localhost</h1>
+
+<mat-form-field>
+  <mat-label>포트</mat-label>
+  <input
+    matInput
+    type="number"
+    [(ngModel)]="port"
+  >
+  <a
+    mat-button
+    [href]="localhostUrl"
+    target="_blank"
+  >
+    접속
+  </a>
+</mat-form-field>
+
