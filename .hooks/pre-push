@@ -1,1 +1,3 @@
-npm run deploy
+if !(npm run deploy)
+then
+  exit 1

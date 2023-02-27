@@ -21,4 +21,4 @@ import { MatListModule } from '@angular/material/list';
   ],
   exports: [NavigationComponent],
 })
-export class NavigationModule {}
+export class NavigationModule { }
