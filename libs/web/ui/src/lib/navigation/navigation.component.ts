@@ -3,7 +3,6 @@ import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Observable } from 'rxjs';
 import { map, shareReplay } from 'rxjs';
 import { Router } from '@angular/router';
-import { Location } from '@angular/common';
 import { ToolbarItem } from '../../shared';
 
 @Component({
