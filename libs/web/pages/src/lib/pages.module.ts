@@ -1,9 +1,8 @@
 import { NgModule } from '@angular/core';
-import { MainModule } from './main';
-import { LocalhostModule } from './localhost';
-import { ClickerModule } from './clicker';
+import { RouterModule } from '@angular/router';
+import { routes } from './pages.routes';
 
 @NgModule({
-  exports: [MainModule, LocalhostModule, ClickerModule],
+  imports: [RouterModule.forRoot(routes)]
 })
 export class PagesModule { }

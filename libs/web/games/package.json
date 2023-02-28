@@ -1,5 +1,5 @@
 {
-  "name": "@web/game",
+  "name": "@web/games",
   "version": "0.0.1",
   "peerDependencies": {
     "@angular/common": "^15.1.0",
