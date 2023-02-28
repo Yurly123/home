@@ -10,14 +10,27 @@
     "importHelpers": true,
     "target": "es2015",
     "module": "esnext",
-    "lib": ["es2017", "dom"],
+    "lib": [
+      "es2017",
+      "dom"
+    ],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@web/pages": ["libs/web/pages/src/index.ts"],
-      "@web/ui": ["libs/web/ui/src/index.ts"]
+      "@web/games": [
+        "libs/web/games/src/index.ts"
+      ],
+      "@web/pages": [
+        "libs/web/pages/src/index.ts"
+      ],
+      "@web/ui": [
+        "libs/web/ui/src/index.ts"
+      ]
     }
   },
-  "exclude": ["node_modules", "tmp"]
+  "exclude": [
+    "node_modules",
+    "tmp"
+  ]
 }

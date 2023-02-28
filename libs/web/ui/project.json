@@ -26,7 +26,8 @@
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
         "jestConfig": "libs/web/ui/jest.config.ts",
-        "passWithNoTests": true
+        "passWithNoTests": true,
+        "maxWorkers": 1
       },
       "configurations": {
         "ci": {

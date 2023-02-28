@@ -1,22 +1,22 @@
 {
-  "name": "web-pages",
+  "name": "web-games",
   "$schema": "../node_modules/nx/schemas/project-schema.json",
   "projectType": "library",
-  "sourceRoot": "libs/web/pages/src",
+  "sourceRoot": "libs/web/games/src",
   "prefix": "home",
   "targets": {
     "build": {
       "executor": "@nrwl/angular:ng-packagr-lite",
       "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
       "options": {
-        "project": "libs/web/pages/ng-package.json"
+        "project": "libs/web/games/ng-package.json"
       },
       "configurations": {
         "production": {
-          "tsConfig": "libs/web/pages/tsconfig.lib.prod.json"
+          "tsConfig": "libs/web/games/tsconfig.lib.prod.json"
         },
         "development": {
-          "tsConfig": "libs/web/pages/tsconfig.lib.json"
+          "tsConfig": "libs/web/games/tsconfig.lib.json"
         }
       },
       "defaultConfiguration": "production"
@@ -25,7 +25,7 @@
       "executor": "@nrwl/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "libs/web/pages/jest.config.ts",
+        "jestConfig": "libs/web/games/jest.config.ts",
         "passWithNoTests": true,
         "maxWorkers": 1
       },
@@ -41,8 +41,8 @@
       "outputs": ["{options.outputFile}"],
       "options": {
         "lintFilePatterns": [
-          "libs/web/pages/**/*.ts",
-          "libs/web/pages/**/*.html"
+          "libs/web/games/**/*.ts",
+          "libs/web/games/**/*.html"
         ]
       }
     }
