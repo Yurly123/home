@@ -24,6 +24,10 @@ export class NavigationComponent {
     {
       text: 'Localhost',
       path: '/localhost',
+    },
+    {
+      text: 'Clicker',
+      path: '/clicker'
     }
   ]
 

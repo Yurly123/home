@@ -13,13 +13,10 @@ export class ClickerGameComponent implements OnInit {
 
   ngOnInit(): void {
     const canvas = this.elementRef.nativeElement.querySelector('canvas#game-canvas')
-    const rendererRatio = 3 / 4
-    const rednererWidth = window.screen.width / 1.5
-    const rednererHeight = rednererWidth * rendererRatio
     const app = new Application({
       view: canvas as HTMLCanvasElement,
-      width: rednererWidth,
-      height: rednererHeight,
+      width: window.screen.width / 1.5,
+      height: window.screen.height / 1.5,
     })
   }
 }
