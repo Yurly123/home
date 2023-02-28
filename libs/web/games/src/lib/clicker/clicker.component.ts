@@ -6,7 +6,7 @@ import { Application } from 'pixi.js';
   templateUrl: './clicker.component.html',
   styleUrls: ['./clicker.component.scss'],
 })
-export class ClickerComponent implements OnInit {
+export class ClickerGameComponent implements OnInit {
   constructor(
     private readonly elementRef: ElementRef<HTMLElement>
   ) { }

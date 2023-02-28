@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ClickerComponent } from './clicker.component';
+import { ClickerGameComponent } from './clicker.component';
 
 @NgModule({
-  declarations: [ClickerComponent],
+  declarations: [ClickerGameComponent],
   imports: [CommonModule],
-  exports: [ClickerComponent],
+  exports: [ClickerGameComponent],
 })
-export class ClickerModule {}
+export class ClickerGameModule { }
